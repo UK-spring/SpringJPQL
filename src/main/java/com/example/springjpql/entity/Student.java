@@ -17,8 +17,8 @@ public class Student {
     private Integer age;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "course_id")
-    private Course course;
+    @JoinColumn(name = "tutor_id")
+    private Tutor tutor;
 
     public Student() {
     }
@@ -28,7 +28,7 @@ public class Student {
         this.age = age;
     }
 
-    public void setCourse(Course course) {
-        this.course = course;
+    public void setTutor(Tutor tutor) {
+        this.tutor = tutor;
     }
 }
